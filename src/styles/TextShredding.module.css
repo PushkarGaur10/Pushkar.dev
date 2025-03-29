@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* TextShredding.module.css */
+.shreddingContainer {
+  font-family: "Inter", sans-serif;
+}
+
+.shreddingText {
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  top: 40vh;
+  left: 5vw;
+}
+.text{
+  font-size: 2rem;
+  font-weight: 200;
+}
+.overflow{
+  height: 4.5rem;
+  overflow: hidden;
+}
+.overflow1{
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .shreddingText {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+  }
+  .overflow , .overflow1{
+    height: auto;
+  }
+  .text{
+    font-size: 20px;
+    font-weight: 400;
+    width: 90%;
+    line-height: 28px;
+    margin-top: 10px;
+  }
+}

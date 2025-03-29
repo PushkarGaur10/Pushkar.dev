@@ -1,0 +1,25 @@
+.skillsOverlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  .skillsOverlay h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+  }
+  
+  .skillsOverlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skillsOverlay li {
+    font-size: 18px;
+    margin: 4px 0;
+  }
+  

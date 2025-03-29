@@ -1,0 +1,355 @@
+.bigC{
+  position: relative;
+}
+.backgroundVideo {
+  position: absolute;
+  top: -200px;
+  left: -120%;
+  width: 105vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.4;
+}
+.topic{
+  position: absolute;
+  top: 180px;
+  left: -110%;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 60px;
+}
+
+/* Reflection for the topic */
+.topicReflection {
+  position: absolute;
+  top: 320px; /* Adjust this to control the gap between the original and reflection */
+  left: -110%;
+  transform: scaleY(-1);
+  transform-origin: top;
+  opacity: 0.5;
+  color: rgb(43, 43, 43);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  z-index: 10;
+  background: linear-gradient(to bottom, rgba(12, 12, 12, 0.5) 0%, transparent 100%);
+}
+
+.slideC {
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  width: 30vw;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.slide {
+  width: 30vw;
+  height: 220px;
+  transition: transform 500ms ease 0s, opacity 500ms ease 0s,
+    visibility 500ms ease 0s;
+  position: absolute;
+  top: 0;
+  border-radius: 12px;
+}
+
+/* 3D reflection effect */
+.reflection {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom: -150px;
+  border-radius: 12px;
+  transition: transform 500ms ease 0s, opacity 500ms ease 0s,
+    visibility 500ms ease 0s;
+}
+
+.sliderContent {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: flex-start;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.sliderContent p {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+/* normal css  */
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.btns {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.btns .btn1 {
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  z-index: 1000;
+  left: 25%;
+}
+
+.btns .btn2 {
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+}
+
+.btns .btn:last-child {
+  margin-left: 40px;
+}
+
+/* normal css  */
+
+.images{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.icons{
+  font-size: 16px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1vw;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  width: 10vw;
+  align-items: center;
+}
+.flex:hover{
+  cursor: pointer;
+}
+
+.sliderContent {
+  position: relative;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: auto;
+}
+
+.images {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-radius: 12px;
+  opacity: 0.95;
+}
+
+/* Overlay on top of the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 80%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px 5%;
+}
+
+.infoContent,
+.techContent,
+.linkContent {
+  font-size: 18px;
+  line-height: 1.4;
+  /* Text styles; background is provided by the overlay */
+}
+
+.icons {
+  font-size: 16px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1vw;
+  padding: 10px 0;
+  position: absolute;
+  font-size: 24px;
+  top: 0;
+  right: 10px;
+}
+.icon:hover {
+  color: white;
+  scale: 1.05;
+}
+
+.text {
+  margin-left: 5px;
+}
+.cardFace{
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 12px;
+}
+.infoContent{
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 26vw;
+  height: 200px;
+  padding: 0 2vw;
+  margin: 12px 0;
+  overflow-y: scroll;
+}
+.infoContent{
+  font-size: 14px;
+  font-weight: 100;
+}
+.infoContent::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+.infoContent::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.infoContent::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.infoContent::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.infoContent {
+  text-align: left;
+  color: #fff;
+}
+
+.flexing{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-right: 20px;
+  position: relative;
+}
+
+.links{
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 10;
+}
+.links:hover{
+  text-decoration: underline;
+}
+
+.projectTitle {
+  font-size: 16;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.techStack h3,
+.projectLink h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.techStack {
+  margin-top: 10px;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 parallel columns */
+  gap: 10px; /* Space between items */
+  margin: 10px 0;
+}
+
+.techItem {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 5px;
+  height: 20px;
+  font-size: 12px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+
+.projectLink a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projectLink a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .slideC {
+    width: 85vw;
+    height: 220px;
+  }
+  .slide {
+    width: 85vw;
+    height: 230px;
+  }
+  .images{
+    height: 180px;
+  }
+  .topic{
+    top: -130px;
+    left: -15px;
+    font-size: 42px;
+  }
+  .topicReflection {
+    top: -25px;
+    left: -15px;
+    font-size: 42px;
+  }
+  .btns .btn1{
+    left: 20%;
+  }
+  .backgroundVideo{
+    left: -10%;
+    top: -300px;
+  }
+}
+

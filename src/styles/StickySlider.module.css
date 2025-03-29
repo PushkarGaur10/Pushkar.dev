@@ -1,0 +1,75 @@
+.wrapper {
+    /* Create enough scroll space so the sticky element has room to stick and animate */
+    height: 200vh; 
+    width: 100%;
+    margin-top: 300px;
+  }
+  
+  .topic {
+    position: sticky;
+    top: 30vh; /* Adjust as needed */
+    left: 0;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    padding-left: 2vw;
+    /* The opacity is now controlled by Framer Motion */
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 70vh; /* The slider sticks near the lower half of the viewport */
+    transform: translateY(-50%);
+    width: 100%;
+    overflow: hidden;
+    height: 350px;       /* Adjust as needed */
+    background: #000;    /* Black background */
+    padding: 20px;
+  }
+  
+  .slider {
+    display: flex;
+    gap: 20px;           /* Space between slides */
+  }
+  
+  .slide {
+    width: 15vw;        /* Must match slideWidth in JS */
+    flex-shrink: 0;
+    background: rgba(134, 134, 134, 0.1); /* Glassy card effect on dark background */
+    border: 1px solid rgb(72, 72, 72);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+  }
+
+  .flexhead{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .img{
+    width: 40px;
+    height: auto;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .sticky {
+      height: 300px;
+    }
+    .slide {
+      width: 80%;
+      font-size: 20px;
+    }
+    .topic {
+      font-size: 36px;
+      top: 45vh;
+    }
+  }
+  
+  

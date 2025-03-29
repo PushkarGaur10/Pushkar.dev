@@ -1,0 +1,42 @@
+.container{
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    margin-top: 100px;
+    border-top: 1px solid rgb(94, 94, 94);
+}
+.icons{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 5vw;
+    font-size: 22px;
+    margin-top: 30px;
+}
+.icon:hover{
+    color: rgb(210, 210, 80);
+}
+
+.linked{
+    color: white;
+    text-decoration: none;
+  }
+
+@media (max-width: 768px) {
+    .position{
+        position: relative;
+    }
+    .container{
+        position: absolute;
+        bottom: 550px;
+        width: 100%;
+        left: 0;
+        z-index: 98;
+    }
+    .icons{
+        gap: 10vw;
+    }
+}

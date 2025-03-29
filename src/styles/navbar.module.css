@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Prociono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap");
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 5vw;
+  box-sizing: border-box;
+  background: transparent;
+  z-index: 10;
+}
+
+.navbarleft,
+.navbarright {
+  font-size: 28px;
+  color: white;
+  font-family: "Prociono", serif;
+  cursor: pointer;
+  position: relative;
+  z-index: 101;
+}
+
+.navbarright:hover {
+  color: rgb(255, 249, 192);
+}
+
+.navcont {
+  color: white;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  overflow: hidden;
+}
+
+.linked{
+  color: white;
+  text-decoration: none;
+}
+
+/* Background Animation */
+@keyframes waveBackground {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.navcont {
+  animation: waveBackground 0.6s ease-in-out;
+}
+
+/* Left Section */
+.left {
+  padding: 17.5vh 0;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 42px;
+  width: 60vw;
+  border-right: 1px solid white;
+}
+
+.right {
+  padding-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
+}
+
+/* Links */
+.link{
+  border-bottom: 1px solid white;
+  padding-bottom: 2vh;
+  padding-left: 5vw;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+  height: 50px;
+  overflow: hidden;
+}
+.link1 {
+  padding-bottom: 2vh;
+  padding-left: 5vw;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+  height: 50px;
+  overflow: hidden;
+}
+
+/* Animate Links */
+.navcont .link,
+.navcont .link1 {
+  transform: scaleX(1);
+}
+
+/* Right Section Animation */
+.right div {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.navcont .right div {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.topic {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.text,
+.text1 {
+  font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+.text1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  gap: 5vw;
+}
+
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+.righttext{
+  height: 30px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 30px 5vw;
+  }
+  .navbarleft,
+  .navbarright {
+    font-size: 20px;
+  }
+  .navcont {
+    flex-direction: column;
+  }
+  .left {
+    width: 100vw;
+    padding: 10vh 0 5vh;
+    font-size: 24px;
+    height: auto;
+  }
+  .link{
+    padding: 20px 0 10px;
+  }
+  .link1{
+    padding: 20px 0 10px;
+  }
+  .right {
+    gap: 20px;
+  }
+}
