@@ -27,8 +27,8 @@ export default [
     id: 4,
     bgColor: "#5a5a5a",
     img:'/Projects/hr.png',
-    title: "Upskilledu Solutions",
-    technologies: ["Next.js", "React", "Firebase", "Tailwind CSS", "Vercel", "TypeScript", "Zustand"],
+    title: "Hyperglot Review",
+    technologies: ["NextJs", "React", "Firebase", "Tailwind CSS", "Vercel", "TypeScript", "Zustand"],
     link: "https://hyperglotreview.com/"
   },
   {

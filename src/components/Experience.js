@@ -51,7 +51,7 @@ export const experiences = [
       iconBg: "#131313",
       date: "Dec 2022 - Mar 2023",
       points: [
-        "I worked with HTML, CSS, Bootstrap, Javascript, jquery, Nodejs, slider libraries, external APIendpoints on multiple projects and collabrated with the team and gained experience.",
+        "I worked with HTML, CSS, Bootstrap, Javascript, jquery, Nodejs, slider libraries, external API endpoints on multiple projects and collabrated with the team and gained experience.",
         "Reduced page load times by 30% through implementation of efficient coding practices and image optimization.",
       ],
     },
