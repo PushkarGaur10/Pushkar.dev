@@ -6,7 +6,7 @@ import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import styles from '../../styles/Three/slider.module.css';
 
-export default (props) => {
+export default function Carousel (props) {
   const [activeSlide, setactiveSlide] = useState(props.activeSlide || 1);
   const ref = useRef(null);
   const isInView = useInView(ref, { triggerOnce: false, threshold: 0.3 });
