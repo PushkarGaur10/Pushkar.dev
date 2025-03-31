@@ -42,16 +42,24 @@
       width: 30vw;
     }
     @media (max-width: 768px) {
+      .container{
+         height: 60vh;
+      }
+      .hero{
+         height: 60vh;
+      }
       .center {
          margin-top: 0;
       }
       .container1{
          flex-direction: column;
          height: 240vh;
+         position: relative;
       }
       .rosecontainer{
          width: 90vw;
          height: 100vh;
          position: absolute;
+         top: 250px;
       }
     }

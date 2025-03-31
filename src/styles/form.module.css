@@ -114,9 +114,7 @@
   @media (max-width: 768px) {
     .container {
       width: 90vw;
-      height: 100vh;
-    }
-    .form {
-      margin-top: 150px;
+      height: 60vh;
+      margin-top: 0;
     }
   }

@@ -66,4 +66,18 @@
     width: 60px;
     border-radius: 30px;
   }
+
+  @media (max-width: 768px) {
+    .imgcont{
+      height: 40px;
+      width: 40px;
+    }
+    .img{
+      height: 40px;
+      width: 40px;
+    }
+    .container {
+      margin-bottom: 0;
+    }
+  }
   

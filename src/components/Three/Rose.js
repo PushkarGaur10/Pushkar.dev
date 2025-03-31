@@ -133,7 +133,7 @@ const ParticleViewer = ({ setLoading }) => {
     // Function to check screen size and update scale
     const updateScale = () => {
       if (window.matchMedia("(max-width: 768px)").matches) {
-        setScale(0.8); // Scale down to 60% on mobile
+        setScale(0.75); // Scale down to 60% on mobile
       } else {
         setScale(1); // Full scale on desktop
       }

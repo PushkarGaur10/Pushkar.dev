@@ -29,13 +29,6 @@
     .position{
         position: relative;
     }
-    .container{
-        position: absolute;
-        bottom: 550px;
-        width: 100%;
-        left: 0;
-        z-index: 98;
-    }
     .icons{
         gap: 10vw;
     }
