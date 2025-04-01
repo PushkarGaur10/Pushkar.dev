@@ -61,6 +61,7 @@
   @media (max-width: 768px) {
     .sticky {
       height: 300px;
+      width: 90%;
     }
     .slide {
       width: 80%;

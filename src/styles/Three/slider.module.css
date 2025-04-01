@@ -324,7 +324,11 @@
 
 @media (max-width: 768px) {
   .slideC {
-    width: 85vw;
+    width: 80vw;
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
     height: 220px;
   }
   .slide {
@@ -350,6 +354,12 @@
   .backgroundVideo{
     left: -10%;
     top: -300px;
+  }
+  .infoContent{
+    width: 80vw;
+  }
+  .techGrid {
+    grid-template-columns: repeat(3, 1fr); /* 3 parallel columns */
   }
 }
 
