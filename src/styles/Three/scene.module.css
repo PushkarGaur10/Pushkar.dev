@@ -53,13 +53,13 @@
       }
       .container1{
          flex-direction: column;
-         height: 240vh;
+         height: 140vh;
          position: relative;
       }
       .rosecontainer{
          width: 90vw;
          height: 60vh;
          position: absolute;
-         top: 750px;
+         top: 40vh;
       }
     }
