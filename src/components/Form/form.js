@@ -96,7 +96,7 @@ const ContactForm = () => {
             placeholder="Email" 
             value={form.email} 
             onChange={handleChange} 
-            className={styles.input} 
+            className={styles.input1} 
             required 
           />
           <div className={styles.flex2}>

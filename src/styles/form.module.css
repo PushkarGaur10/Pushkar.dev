@@ -42,7 +42,8 @@
   
   
   .input,
-  .textarea {
+  .textarea,
+  .input1 {
     width: 96%;
     padding: 0 15px;
     font-size: 1rem;
@@ -56,12 +57,12 @@
     border: 1px solid rgb(72, 72, 72);
   }
 
-  .input{
+  .input, .input1{
     padding-top: 40px;
     padding-bottom: 10px;
   }
 
-  .input::placeholder{
+  .input::placeholder, .input1::placeholder{
     height: 100px;
     display: flex;
     align-items: baseline;
@@ -72,6 +73,7 @@
   }
   
   .input::placeholder,
+  .input1::placeholder,
   .textarea::placeholder {
     color: #ddd;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -79,6 +81,7 @@
   }
   
   .input:focus,
+  .input1:focus,
   .textarea:focus {
     background: rgba(93, 93, 93, 0.3);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
@@ -116,5 +119,8 @@
       width: 90vw;
       height: 60vh;
       margin-top: 0;
+    }
+    .input1{
+      width: 90.5%;
     }
   }
